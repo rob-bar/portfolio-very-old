@@ -1,0 +1,32 @@
+/* 
+    Document   : htmltagstyles
+    Created on : 8-okt-2009, 16:30:52
+    Author     : BardijnR
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/*put all htmltag styles here*/
+
+body {
+    background-color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:        12px;
+    color:            #000;
+}
+
+a {
+    color: #003399;
+    text-decoration: underline;
+}
+a:hover {
+    color: #900;
+}
+
+p {
+    line-height: 1.55;
+}
+pre { display: block;margin: 0px;padding: 2px 2px 2px 2px; border: 1px solid #888; background: #ccc;}
+code { display: block;margin: 0px;padding: 2px 2px 2px 20px;border: 1px solid #888;background: #fff;}
+label { cursor: hand; cursor: pointer;}

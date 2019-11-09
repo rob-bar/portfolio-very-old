@@ -1,0 +1,344 @@
+/* 
+    Document   : ui
+    Created on : 8-okt-2009, 16:28:56
+    Author     : BardijnR
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+p, form, img, h1, h2, h3, h4, h5, h6, ul, ol, li, html, body, input, button, textarea {
+	margin: 0;
+	padding: 0;
+}
+
+.hide{
+	left: -10000px;
+	position: absolute;
+}
+
+a, input, textarea, button {
+	outline: none;
+}
+
+a img {
+	border: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: #000000;
+	font-family:Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+cufon{
+	text-indent:0!important;
+}
+
+/*put al ui styles and positionings here*/
+@font-face {
+	font-family: 'Conv_HelveticaNeueLTCom-Md';
+	src: url('../fonts/HelveticaNeueLTCom-Md.eot');
+	src: local('‚ò∫'), url('../fonts/HelveticaNeueLTCom-Md.woff') format('woff'), url('../fonts/HelveticaNeueLTCom-Md.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-Md.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueLTCom-BlkCn';
+	src: url('../fonts/HelveticaNeueLTCom-BlkCn.eot');
+	src: local('‚ò∫'), url('../fonts/HelveticaNeueLTCom-BlkCn.woff') format('woff'), url('../fonts/HelveticaNeueLTCom-BlkCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-BlkCn.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueLTCom-HvCn';
+	src: url('../fonts/HelveticaNeueLTCom-HvCn.eot');
+	src: local('‚ò∫'), url('../fonts/HelveticaNeueLTCom-HvCn.woff') format('woff'), url('../fonts/HelveticaNeueLTCom-HvCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-HvCn.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueLTCom-Bd';
+	src: url('../fonts/HelveticaNeueLTCom-Bd.eot');
+	src: local(',ò∫'), url('../fonts/HelveticaNeueLTCom-Bd.woff') format('woff'), url('../fonts/HelveticaNeueLTCom-Bd.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-Bd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px){
+	img.bg {
+		left: 50%;
+		margin-left: -512px; }
+}
+
+div #ticket{
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:200px;
+	height:135px;
+	margin:-67px 0 0 -100px;
+}
+div #ticket-left-container{
+	position: absolute;
+	height:112px;
+	width:236px;
+	left:-190px;
+	top:0px;
+	overflow: hidden;
+}
+div #ticket-left{
+	position: absolute;
+	height:112px;
+	width:236px;
+	left:190px;
+	background:  url('../images/ui/ticket_left_bg.png') no-repeat;
+}
+div #ticket-right{
+	position: absolute;
+	height:112px;
+	width:156px;
+	left:46px;
+	background:  url('../images/ui/ticket_right_bg.png') no-repeat;
+}
+.tickettekst{
+	font-family:'Conv_HelveticaNeueLTCom-HvCn',Sans-Serif;
+	/*	font-size: 12px;*/
+	font-weight: normal;
+	color:#706b5e;
+	text-align: right;
+}
+#ticket-right h1{
+	/*	text-shadow: -1px -1px 1px rgba(0, 0, 0, .75);*/
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 8px 13px 0 0;
+}
+
+#fed{
+	/*	text-shadow: -1px -1px 1px rgba(0, 0, 0, .75);*/
+	text-transform: uppercase;
+	font-size: 10px;
+	margin: -5px 13px 0 0;
+	font-family:'Conv_HelveticaNeueLTCom-Md',Sans-Serif;
+	/*	font-size: 12px;*/
+	font-weight: normal;
+	color:#6b6659;
+	text-align: right;
+}
+#contact-info{
+	/*	text-shadow: -1px -1px 1px rgba(0, 0, 0, .75);*/
+	color: #6B6659;
+	font-family: 'Conv_HelveticaNeueLTCom-Md',Sans-Serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 28px 13px 0 0;
+	text-align: right;
+}
+#contact-info a{
+	/*	text-shadow: -1px -1px 1px rgba(0, 0, 0, .75);*/
+	color: #6B6659;
+	text-decoration: none;
+}
+
+#contact-info a:hover{
+	/*	text-shadow: -1px -1px 1px rgba(0, 0, 0, .75);*/
+	color: #6B6659;
+	text-decoration: underline;
+}
+
+#arrow{
+	background: url("../images/ui/arrow.png") no-repeat scroll 3px 46px transparent;
+	display: block;
+	height: 112px;
+	margin: 0 9px 0 20px;
+	position: relative;
+	width: 25px;
+}
+#social{
+	display: block;
+	left: 90px;
+	position: relative;
+	top: -20px;
+}
+#actual-ticket{
+	position: relative;
+	display: block;
+}
+#social a{
+	float: left;
+	text-decoration: none;
+}
+#social a:hover{
+	background-position: 0 -24px;
+}
+
+#social-1{
+	position: relative;
+	display: block;
+	width:22px;
+	height: 23px;
+	background:  url('../images/ui/soc-1.png') no-repeat;
+}
+#social-2{
+	position: relative;
+	display: block;
+	width:22px;
+	height: 23px;
+	background:  url('../images/ui/soc-2.png') no-repeat;
+}
+#social-3{
+	position: relative;
+	display: block;
+	width:38px;
+	height: 23px;
+	background:  url('../images/ui/soc-3.png') no-repeat;
+}
+#social-4{
+	position: relative;
+	display: block;
+	width:22px;
+	height: 23px;
+	background:  url('../images/ui/soc-4.png') no-repeat;
+}
+#project-container{
+	left: 46px;
+	margin-top: 7px;
+	position: absolute;
+	top: 0;
+	width: 190px;
+}
+#project-container h2{
+	color:#40404a;
+	padding-left: 6px;
+	font-family: 'Conv_HelveticaNeueLTCom-Md',Sans-Serif;
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: normal;
+	background-image: url('../images/ui/line.png');
+	background-position: 0 17px;
+	background-repeat: no-repeat;
+}
+#project-container li{
+	color:#40404a;
+	font-family: 'Conv_HelveticaNeueLTCom-Md',Sans-Serif;
+	font-size: 11px;
+	padding-left: 6px;
+	font-weight: normal;
+	height: 20px;
+	line-height: 17px;
+	list-style-type: none;
+	background-image: url('../images/ui/line.png') ;
+	background-position: 0 16px;
+	background-repeat: no-repeat;
+}
+#project-container ul{
+	background-image: url('../images/ui/ball.png') ;
+	background-position: 88px 62px;
+	height: 80px;
+	background-repeat: no-repeat;
+}
+
+#project-container li a{
+	color:#40404a;
+	text-decoration: none;
+}
+#project-container li a:hover{
+	color:#000000;
+}
+#project-container li a span{
+	font-family: 'Conv_HelveticaNeueLTCom-Bd',Sans-Serif;
+}
+#project-container ul{
+	margin-top: 3px;
+}
+
+#social a span{
+	color: #3f2f5e;
+	position:absolute;
+/*	width: 200px;*/
+	top:-32px;
+	height: 24px;
+	text-align: center;
+	padding-top:10px;
+	font-family: 'Conv_HelveticaNeueLTCom-Md',Sans-Serif;
+	font-size: 11px;
+}
+#social-1 span{
+	left:-66px;
+	width:158px;
+	visibility: hidden;
+	background:  url('../images/ui/baloon-1.png') no-repeat;
+}
+#social-2 span{
+	left:-56px;
+	width:138px;
+	visibility: hidden;
+	background:  url('../images/ui/baloon-2.png') no-repeat;
+}
+#social-3 span{
+	left:-69px;
+	width:178px;
+	visibility: hidden;
+	background:  url('../images/ui/baloon-3-4.png') no-repeat;
+}
+#social-4 span{
+	left:-77px;
+	width:178px;
+	visibility: hidden;
+	background:  url('../images/ui/baloon-3-4.png') no-repeat;
+}
+
+
+#download{
+	display: block;
+	left: 178px;
+	position: relative;
+	top: 110px;
+}
+
+#download a{
+	text-decoration: none;
+}
+
+#download a span{
+	color: #3f2f5e;
+	position:absolute;
+/*	width: 200px;*/
+	top:9px;
+	height: 24px;
+	text-align: center;
+	padding-top:15px;
+	font-family: 'Conv_HelveticaNeueLTCom-Md',Sans-Serif;
+	font-size: 11px;
+}
+#download-1{
+	position: relative;
+	display: block;
+	width:22px;
+	height: 23px;
+	background:  url('../images/ui/download.png') no-repeat;
+}
+#download-1 span{
+	left:-81px;
+	width:178px;
+	visibility: hidden;
+	background:  url('../images/ui/baloon-3-4-i.png') no-repeat;
+}
